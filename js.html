@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            DOM
+        </title>
+        <h1>Welcome JS session</h1>
+    </head>
+    <body>
+        <div id="demo">
+            <h4>heading 4</h4>
+        </div>
+        <div id="display">
+            <p class="paragraph">paragraph 1</p>
+            <p class="paragraph">paragraph 2<p>hi this is js</p></p>
+            <p class="paragraph">paragraph 3</p>
+        </div>
+        <script>
+            //document.body.innerHTML="Some Text";
+
+            //var elem=document.getElementById("demo");
+            //elem.innerHTML="this is call by id";
+
+            //var arr=document.getElementsByClassName("paragraph");
+            //arr[1].innerHTML="this is call by class name";
+
+            //var arr=document.getElementsByTagName("p");
+            //for(var x=0;x<arr.length;x++)
+            //{
+              //  arr[x].innerHTML="Hi!there this is all by tag name";
+            //}
+
+            var a=document.getElementById("display");
+            var ar=a.childNodes;
+            for(var x=0;x<ar.length;x++)
+            {
+                ar[x].innerHTML="new text this is call by child nodes!!!";
+            }
+
+
+        </script>
+    </body>
+</html>

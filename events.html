@@ -1,0 +1,47 @@
+<html>
+    <head>
+    <title>
+        EVENTS
+    </title>
+</head>
+<body>
+    <h1>Javascript HTML Events<h1>
+        Enter your name:<input type="text" id="fname" onchange="upperCase()">
+        <p>When you leave the input field,a function is triggered which transforms the input text to upper case</p>
+        <script>
+            function upperCase()
+            {
+                const x=document.getElementById("fname");
+                x.value=x.value.toUpperCase();
+            }
+
+        </script>
+        <hr style="padding:10px;border:0px;">
+        <div onmouseover="mOver(thois)"onmouseout="mOut(this)"
+        style="background-color: blue;width:120px;height:20px;padding:40px;">
+        Mouse Over Me</div>
+        <script>
+            function mOver(obj)
+            {
+                obj.innerHTML="Thank You"
+                obj.style.backgroundColor="pink";
+            }
+            function mOut(obj)
+            {
+                obj.innerHTML="Mouse Over Me"
+                obj.style.backgroundColor="green";
+            }
+        </script>
+        <hr style="padding:10px;border:0px;">
+        <div onmousedown="mDown(this)"onmouseup="mUp(this)"
+        style="background-color: black;color:white;width:90px;height:20px;padding:40px;">
+    Click Me</div>
+    <script>
+        function mUp(obj)
+        {
+            obj.style.backgroundColor="blue";
+            on=bj.innerHTML="Thank You";
+        }
+    </script>
+</body>
+</html>
